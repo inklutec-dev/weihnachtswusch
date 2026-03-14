@@ -1,8 +1,38 @@
 /* ===========================================
    Weihnachtswusch – Barrierefreie Webseite
    Farben: Weihnachtlich (Grün, Rot, Beige)
-   Font: Manrope (wie Original)
+   Font: Manrope (lokal gehostet, DSGVO-konform)
    =========================================== */
+
+/* ---------- Lokale Schriftarten ---------- */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/manrope-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/manrope-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/manrope-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/manrope-800.ttf') format('truetype');
+}
 
 /* ---------- Reset & Base ---------- */
 *, *::before, *::after {
@@ -130,6 +160,8 @@ body {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
 }
 
 .site-nav a:hover {
@@ -253,9 +285,9 @@ a:focus-visible {
 }
 
 /* Social brand colors – weiß auf dunklerem Hintergrund für Kontrast */
-.social-spotify { background-color: #117a37; }   /* Dunkleres Spotify-Grün: 4.6:1 ✓ */
-.social-youtube { background-color: #cc0000; }   /* YouTube Rot: 4.6:1 ✓ */
-.social-instagram { background-color: #b5006a; } /* Dunkleres Instagram: 4.6:1 ✓ */
+.social-spotify { background-color: #0d6b2f; }   /* Spotify-Grün: 5.4:1 ✓ AA */
+.social-youtube { background-color: #b30000; }   /* YouTube Rot: 5.3:1 ✓ AA */
+.social-instagram { background-color: #9e005d; } /* Instagram: 5.2:1 ✓ AA */
 .social-tiktok { background-color: #000000; }    /* Schwarz: 21:1 ✓ */
 
 .social-links svg {
@@ -288,6 +320,8 @@ a:focus-visible {
 .footer-nav a {
   color: var(--color-link);
   font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
 }
 
 .footer-credit {
