@@ -47,6 +47,19 @@ body {
   background-color: var(--color-bg);
 }
 
+/* ---------- Screen Reader Only ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ---------- Skip Link ---------- */
 .skip-link {
   position: absolute;
@@ -192,6 +205,13 @@ a:focus-visible {
   border-radius: 8px;
   max-height: 500px;
   object-fit: cover;
+}
+
+.hero-image figcaption {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: var(--space-xs);
+  text-align: center;
 }
 
 /* ---------- Social Links ---------- */
